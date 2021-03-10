@@ -1,6 +1,6 @@
-/***************************************************************************//**
- * @file     core_cmSimd.h
- * @brief    CMSIS Cortex-M SIMD Header File
+/**************************************************************************//**
+ * @file     core_cmFunc.h
+ * @brief    CMSIS Cortex-M Core Function Access Header File
  * @version  V4.30
  * @date     20. October 2015
  ******************************************************************************/
@@ -38,17 +38,13 @@
   #pragma clang system_header   /* treat file as system include file */
 #endif
 
-#ifndef __CORE_CMSIMD_H
-#define __CORE_CMSIMD_H
-
-#ifdef __cplusplus
- extern "C" {
-#endif
+#ifndef __CORE_CMFUNC_H
+#define __CORE_CMFUNC_H
 
 
-/* ###################  Compiler specific Intrinsics  ########################### */
-/** \defgroup CMSIS_SIMD_intrinsics CMSIS SIMD Intrinsics
-  Access to dedicated SIMD instructions
+/* ###########################  Core Function Access  ########################### */
+/** \ingroup  CMSIS_Core_FunctionInterface
+    \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
   @{
 */
 
@@ -86,11 +82,6 @@
 
 #endif
 
-/*@} end of group CMSIS_SIMD_intrinsics */
+/*@} end of CMSIS_Core_RegAccFunctions */
 
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* __CORE_CMSIMD_H */
+#endif /* __CORE_CMFUNC_H */
